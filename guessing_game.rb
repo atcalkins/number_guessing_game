@@ -36,4 +36,4 @@ guesses = []
   end
 end
 # if they lost print losing message here?
-puts "Game over, the number was #{rand_num} please come back and play again."
+puts "You have run out of attempts, the number was #{rand_num} please come back and play again."
