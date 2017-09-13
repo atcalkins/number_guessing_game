@@ -1,29 +1,23 @@
-random_num = rand(1..100)
+rand_num = rand(1..100)
 attempts = 0
 guesses = []
 
-print "Welcome to the Guessing Game, please choose a number between 1 and 100.\n"
-
-while attempts <= 5
-  print "Please select a number between 1 and 100"
-
-  # def user_guess
-  #   gets.chomp.to_i
-  # #puts a message here to show they guessed?
-  # end
-
-  num = gets.chomp.to_i
-
-  if guesses.include? num
-    puts "Number has already been guessed."
+  def game_start
+    puts "Please choose a number between 1 and 100.\n"
   end
 
-  if guesses.include?
-    puts "Incorrect, please select a different number between 1 and 100"
+  while attempts < 5
+    print game_start
 
-    print input_prompt
+  def user_guess
+    gets.chomp.to_i
+  end
 
-    here
+  num = user_guess
+
+  #puts a message here to show they guessed
+  if guesses.include? num
+    puts "Number has already been guessed."
   end
 
   guesses.push num
@@ -42,4 +36,4 @@ while attempts <= 5
   end
 end
 # if they lost print losing message here?
-print "Game over, please come back and play again."
+puts "Game over, the number was #{rand_num} please come back and play again."
