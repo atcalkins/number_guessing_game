@@ -30,7 +30,7 @@ guesses = []
     puts "Number guessed was too low, please select a higher number"
     attempts += 1
 
-  else num > rand_num
+  elsif num > rand_num
     puts "Number guessed was too high, please select a lower number"
     attempts += 1
   end
