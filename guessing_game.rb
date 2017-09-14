@@ -10,6 +10,8 @@ def user_guess
   gets.chomp.to_i
 end
 
+game_start
+
 while attempts < 5
   num = user_guess
   if guesses.include? num
